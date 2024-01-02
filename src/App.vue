@@ -1,7 +1,6 @@
 <template>
   <t-button @click="visible = true">打开</t-button>
-  <t-dialog v-model:visible="visible" title="demo" width="800px"
-    :headerAffixedTop="{ offsetTop: '200px', zIndex: 30000 }">
+  <t-dialog v-model:visible="visible" title="demo" width="800px" :headerAffixedTop="{ offsetTop: 200, zIndex: 30000 }">
     <t-table row-key="id" :bordered="true" :data="data" :columns="columns"> </t-table>
   </t-dialog>
 </template>
